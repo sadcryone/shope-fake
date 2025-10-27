@@ -1,30 +1,33 @@
-const openmodalregisterbtn = document.querySelector('.js-modal-click-register');
-const openmodalloginbtn = document.querySelector('.js-modal-click-login');
-const modallogin = document.querySelector('.js-modal-login');
-const modalregister = document.querySelector('.js-modal-register');
-openmodalloginbtn.addEventListener('click', ()=>{
-    modallogin.classList.add('open');
+const openclickmodalregister = document.querySelector('.js-modal-click-register');
+const openclickmodallogin = document.querySelector('.js-modal-click-login');
+const clickmodalregister = document.querySelector('.js-modal-register');
+const clickmodallogin = document.querySelector('.js-modal-login');
+openclickmodalregister.addEventListener('click',()=>{
+  clickmodalregister.classList.add('open');
 });
-openmodalregisterbtn.addEventListener('click', ()=>{
-    modalregister.classList.add('open');
+openclickmodallogin.addEventListener('click', ()=>{
+  clickmodallogin.classList.add('open');
 });
-const CloseModal = document.querySelectorAll('.js-modal-close');
-for(const btn of CloseModal){
-    btn.addEventListener('click',()=>{
-        modallogin.classList.remove('open');
-        modalregister.classList.remove('open');
-    });
+const closesmodal = document.querySelectorAll('.js-modal-close');
+for(const btnClose of closesmodal){
+  btnClose.addEventListener('click',()=>{
+    clickmodallogin.classList.remove('open');
+    clickmodalregister.classList.remove('open');
+  });
 };
-const switchtoregister = document.querySelector('.js-modal-switch-login');
-const switchtologin = document.querySelector('.js-modal-switch-register');
-switchtoregister.addEventListener('click',()=>{
-    modalregister.classList.remove('open');
-    modallogin.classList.add('open');
+const switchlogin = document.querySelector('.js-modal-switch-login');
+const switchregister = document.querySelector('.js-modal-switch-register');
+switchlogin.addEventListener('click',()=>{
+  clickmodalregister.classList.remove('open');
+  clickmodallogin.classList.add('open');
+
 });
-switchtologin.addEventListener('click',()=>{
-    modallogin.classList.remove('open');
-    modalregister.classList.add('open');
+switchregister.addEventListener('click',()=>{
+  clickmodallogin.classList.remove('open');
+  clickmodalregister.classList.add('open');
+
 });
+
 const input = document.getElementById("search");
 const box = document.getElementById("suggestions");
 
@@ -35,7 +38,7 @@ input.addEventListener("focus", () => {
 
 // Khi blur (click ra ngoài) thì ẩn gợi ý
 input.addEventListener("blur", () => {
-  setTimeout(()=> box.style.display = "none", 200);
+  setTimeout(()=> box.style.display = "none", 0);
 });
 
 // Khi click vào gợi ý thì gán vào input
