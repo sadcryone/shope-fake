@@ -1070,7 +1070,10 @@
     height: 500px;
     background-color: #fafafa;
 }
-.footer-mid-content{}
+.footer-mid-content{
+    padding-bottom: 40px;
+    border-bottom: 1px solid #e0e0e0;
+}
 .footer-mid-content-list{
     display: flex;
 
@@ -1115,6 +1118,96 @@
 }
 .content-box-item-five{
     display: flex;
+}
+.content-box-image-five{
+    padding: 2px;
+    box-shadow: 
+    -1px 1px 2px rgba(0, 0, 0, 0.1), /* bóng trái */
+     1px 1px 2px rgba(0, 0, 0, 0.1), /* bóng phải */
+     0px 2px 3px rgba(0, 0, 0, 0.15); /* bóng dưới */
+}
+.content-box-item-image-box-image{
+    width: 76px;
+    height: 24px;
+    margin-left: 15px;
+    margin-top: 6px;
+}
+.content-box-item-image img{
+    width: 68px;
+    height: 16px;
+    display: block;
+     box-shadow: 
+    -1px 1px 2px rgba(0, 0, 0, 0.1), /* bóng trái */
+     1px 1px 2px rgba(0, 0, 0, 0.1), /* bóng phải */
+     0px 2px 3px rgba(0, 0, 0, 0.15); /* bóng dưới */
+}
+
+.footer-bottom-content{
+    margin-top: 45px;
+}
+.content-bottom-box-item{
+    font-size: 1.4rem;
+    padding-bottom: 40px;
+}
+.content-bottom-box-item p{
+    margin: 0;
+    color: #0000008A;
+}
+.footer-bottom{
+    background-color: #f5f5f5;
+
+}
+.footer-bottom-box{
+    padding-top: 40px;
+}
+.footer-bottom-list-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 14%;
+    margin-right: 14%;
+    margin-bottom: 50px;
+}
+.footer-bottom-list-box p{
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    opacity: 0.9;
+}
+.footer-bottom-list-box span{
+    margin-left: 26px;
+}
+.footer-logo{
+    display: flex;
+    align-items: center;
+    margin-left: 33%;
+}
+.footer-logo-list{
+    margin-right: 45px;
+}
+.footer-logo-register img{
+    width: 120px;
+    height: 40px;
+}
+.footer-logo-fingerprint img{
+    width: 48px;
+    height: 48px;
+}
+.footer-bottom-text-box-list{
+    width: 100%;
+    display: block;
+    justify-content: center;
+    align-items: center;
+
+}
+.footer-bottom-text-box-list p{
+    width: 100%;
+    text-align: center;
+    font-size: 1.4rem;
+    color: #000000A6;
+    line-height: 1.4rem;
+}
+.footer-bottom-text-box-list .text-box-p-one{
+    margin-bottom: 30px;
 }
 @keyframes qrFadeInUp {
     from {
